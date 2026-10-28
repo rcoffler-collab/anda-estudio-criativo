@@ -8,8 +8,8 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 locale: "pt"
-site_url: "https://SEU-SITE.netlify.app"
-display_url: "https://SEU-SITE.netlify.app"
+site_url: "https://angaestudiocriativo.netlify.app"
+display_url: "https://angaestudiocriativo.netlify.app"
 logo_url: "/assets/logo-escuro.png"
 slug:
   encoding: "ascii"
@@ -39,6 +39,14 @@ collections:
                   - {label: "Materiais gráficos", value: "grafico"}
                   - {label: "Digital / Websites", value: "digital"}
               - {label: "Descrição curta", name: "description", widget: "string", required: false}
-              - {label: "Imagem / mockup", name: "image", widget: "image"}
+              - label: "Tipo de apresentação"
+                name: "presentation"
+                widget: "select"
+                options:
+                  - {label: "Mockup estático", value: "mockup"}
+                  - {label: "Revista / livro com PageFlip", value: "pageflip"}
+                default: "mockup"
+              - {label: "Imagem / mockup ou capa", name: "image", widget: "image"}
+              - {label: "PDF para PageFlip (revistas e livros)", name: "pdf", widget: "file", required: false, media_folder: "/assets/uploads/publicacoes", public_folder: "/assets/uploads/publicacoes", allow_multiple: false}
               - {label: "Texto alternativo da imagem", name: "alt", widget: "string", required: false}
               - {label: "Destaque na página inicial", name: "featured", widget: "boolean", default: false, required: false}

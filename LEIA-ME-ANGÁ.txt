@@ -36,3 +36,12 @@ IMPORTANTE
 - Não publique tokens, senhas nem chaves privadas no repositório.
 - Confirme o número do WhatsApp antes de divulgar: +55 27 99524-8792.
 - O site é independente de domínio próprio; primeiro pode funcionar no endereço gratuito da Netlify.
+
+
+PORTFÓLIO COM PAGEFLIP (atualização 28/10/2026)
+- No painel /admin, cada projeto tem o campo “Tipo de apresentação”.
+- Para cartão, folder, identidade visual e outros impressos, selecione “Mockup estático” e envie a imagem.
+- Para revista ou livro, selecione “Revista / livro com PageFlip”, envie uma imagem de capa/mockup e anexe o PDF no campo correspondente.
+- O visualizador abre sobre um fundo neutro, com controles discretos e animação suave.
+- As bibliotecas PDF.js e PageFlip são carregadas de CDNs externos; a primeira abertura precisa de conexão com a internet.
+- Depois de alterar o código localmente, publique os arquivos no repositório GitHub conectado ao Netlify.

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Exemplo de projeto editorial",
+      "category": "editorial",
+      "description": "Substitua este exemplo por um trabalho real da Angá.",
+      "image": "/assets/designer-editorial.png",
+      "alt": "Imagem ilustrativa de design editorial — substituir por projeto real",
+      "featured": true
+    },
+    {
+      "title": "Exemplo de identidade visual",
+      "category": "identidade",
+      "description": "Substitua este exemplo por um trabalho real da Angá.",
+      "image": "/assets/designer-workspace.png",
+      "alt": "Imagem ilustrativa de identidade visual — substituir por projeto real",
+      "featured": false
+    },
+    {
+      "title": "Exemplo de projeto digital",
+      "category": "digital",
+      "description": "Substitua este exemplo por um trabalho real da Angá.",
+      "image": "/assets/designer-computador.png",
+      "alt": "Imagem ilustrativa de projeto digital — substituir por projeto real",
+      "featured": false
+    }
+  ]
+}

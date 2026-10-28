@@ -1,0 +1,38 @@
+ANGÁ ESTÚDIO CRIATIVO — PROPOSTA EDITORIAL + PAINEL DE PORTFÓLIO
+
+ESTRUTURA
+- index.html: página inicial
+- portfolio.html: portfólio dinâmico, com filtros por categoria
+- contato.html: formulário de briefing com seleção de múltiplos arquivos
+- assets/: imagens e logomarcas existentes
+- admin/: painel editorial (Decap CMS)
+- content/portfolio.json: conteúdo que o painel edita
+- netlify.toml: configuração básica de publicação na Netlify
+
+ANTES DE ENVIAR AO GITHUB
+1. Extraia este ZIP no computador.
+2. Entre no repositório https://github.com/rcoffler-collab/anda-estudio-criativo
+3. Clique em Add file > Upload files.
+4. Abra a pasta extraída no Explorador de Arquivos e selecione TODOS os itens que estão dentro dela (index.html, portfolio.html, contato.html, styles.css, script.js, LEIA-ME-ANGÁ.txt, netlify.toml e as pastas assets, admin e content). Arraste-os para a área de upload do GitHub. Não envie apenas o ZIP e não crie uma pasta extra envolvendo tudo.
+5. Na mensagem de commit, escreva: Adiciona site Angá e painel de portfólio. Clique em Commit changes.
+
+PUBLICAÇÃO NA NETLIFY
+1. Na Netlify, escolha Add new site > Import an existing project > GitHub.
+2. Selecione rcoffler-collab/anda-estudio-criativo.
+3. Build command: deixe vazio. Publish directory: . (ponto).
+4. Publique e guarde o endereço gratuito terminado em netlify.app.
+5. Depois de saber esse endereço, atualize admin/config.yml: troque https://SEU-SITE.netlify.app nas linhas site_url e display_url pelo endereço real. Faça commit e aguarde novo deploy.
+
+PAINEL ADMINISTRATIVO — ATENÇÃO
+O painel fica em /admin/ e usa Decap CMS com o backend GitHub. O arquivo admin/config.yml já aponta para o repositório rcoffler-collab/anda-estudio-criativo. Para o login funcionar, a autenticação OAuth do GitHub precisa ser configurada na Netlify para este site. O endereço final do site é necessário para concluir essa configuração. Portanto, não considere o painel pronto para uso antes de testar o login em /admin/.
+
+FORMULÁRIO
+O formulário de contato está preparado para Netlify Forms. Após o primeiro deploy, confirme no painel Netlify se a detecção de formulários está ativa, faça novo deploy se necessário e envie um teste. Confira também o limite de tamanho/quantidade de anexos vigente. O campo aceita seleção de múltiplos formatos no navegador, mas a hospedagem pode impor limites.
+
+PORTFÓLIO
+A página portfolio.html lê content/portfolio.json. O painel administrativo edita esse arquivo. As imagens iniciais são ilustrativas e precisam ser substituídas por trabalhos reais antes da divulgação definitiva.
+
+IMPORTANTE
+- Não publique tokens, senhas nem chaves privadas no repositório.
+- Confirme o número do WhatsApp antes de divulgar: +55 27 99524-8792.
+- O site é independente de domínio próprio; primeiro pode funcionar no endereço gratuito da Netlify.

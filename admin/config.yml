@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: rcoffler-collab/anda-estudio-criativo
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  use_graphql: true
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: "pt"
+site_url: "https://SEU-SITE.netlify.app"
+display_url: "https://SEU-SITE.netlify.app"
+logo_url: "/assets/logo-escuro.png"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+collections:
+  - name: "portfolio"
+    label: "Portfólio"
+    files:
+      - name: "projects"
+        label: "Projetos do portfólio"
+        file: "content/portfolio.json"
+        format: "json"
+        fields:
+          - label: "Projetos"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - label: "Categoria"
+                name: "category"
+                widget: "select"
+                options:
+                  - {label: "Design editorial", value: "editorial"}
+                  - {label: "Identidade visual", value: "identidade"}
+                  - {label: "Materiais gráficos", value: "grafico"}
+                  - {label: "Digital / Websites", value: "digital"}
+              - {label: "Descrição curta", name: "description", widget: "string", required: false}
+              - {label: "Imagem / mockup", name: "image", widget: "image"}
+              - {label: "Texto alternativo da imagem", name: "alt", widget: "string", required: false}
+              - {label: "Destaque na página inicial", name: "featured", widget: "boolean", default: false, required: false}

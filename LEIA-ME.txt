@@ -1,0 +1,26 @@
+ANGÁ ESTÚDIO CRIATIVO — NOVA PROPOSTA VISUAL v2
+
+ARQUIVOS
+- index.html: página inicial
+- portfolio.html: portfólio com filtros por categoria
+- contato.html: formulário de briefing com seleção de múltiplos arquivos
+- styles.css / script.js
+- assets/: logos e imagens recuperadas dos pacotes anteriores
+
+TESTE LOCAL
+Abra index.html no navegador. Para testar formulários de verdade, publique o site na Netlify.
+
+PUBLICAÇÃO NA NETLIFY E FORMULÁRIO
+1. Extraia o ZIP e envie a pasta do site para um novo site Netlify (ou faça deploy da pasta que contém index.html).
+2. Em Netlify, abra Forms e confirme que a detecção de formulários está habilitada. Faça um novo deploy depois de ativar, se necessário.
+3. Envie uma mensagem de teste e confirme que a submissão aparece no painel Forms.
+4. Confira se o campo attachments chega como arquivo anexado. O suporte e os limites de tamanho/quantidade dependem da configuração e das limitações atuais da Netlify. Não prometa ao cliente envio ilimitado ou qualquer arquivo sem verificar esses limites.
+5. Configure notificações de novas submissões no painel Netlify.
+
+IMPORTANTE
+- As imagens do portfólio são ilustrativas, não são prova de trabalhos executados pela Angá. Substitua-as por projetos reais antes de divulgar a página como portfólio definitivo.
+- O WhatsApp está apontado para o número 55 27 99524-8792. Confirme se continua correto.
+- O e-mail não foi usado como destino de envio porque o formulário usa Netlify Forms.
+- O formulário permite selecionar múltiplos arquivos de diversos tipos no navegador, mas a hospedagem pode impor limites. Não use upload de arquivos irrestritos sem controles e limites.
+- A marca e imagens são as recuperadas dos ZIPs anteriores. Revise a logo em tela clara/escura.
+- Esta proposta usa fontes externas do Google Fonts; se desejar, podemos trocar por fontes locais para reduzir dependências externas.

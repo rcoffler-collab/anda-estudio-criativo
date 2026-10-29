@@ -1,12 +1,13 @@
 {
   "projects": [
     {
-      "title": "Exemplo de projeto editorial",
+      "title": "Teste de salvamento",
       "category": "editorial",
       "description": "Substitua este exemplo por um trabalho real da Angá.",
       "image": "/assets/designer-editorial.png",
       "alt": "Imagem ilustrativa de design editorial — substituir por projeto real",
-      "featured": true
+      "featured": true,
+      "presentation": "mockup"
     },
     {
       "title": "Exemplo de identidade visual",
@@ -14,7 +15,8 @@
       "description": "Substitua este exemplo por um trabalho real da Angá.",
       "image": "/assets/designer-workspace.png",
       "alt": "Imagem ilustrativa de identidade visual — substituir por projeto real",
-      "featured": false
+      "featured": false,
+      "presentation": "mockup"
     },
     {
       "title": "Exemplo de projeto digital",
@@ -22,7 +24,8 @@
       "description": "Substitua este exemplo por um trabalho real da Angá.",
       "image": "/assets/designer-computador.png",
       "alt": "Imagem ilustrativa de projeto digital — substituir por projeto real",
-      "featured": false
+      "featured": false,
+      "presentation": "mockup"
     }
   ]
 }

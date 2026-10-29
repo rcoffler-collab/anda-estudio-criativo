@@ -1,21 +1,20 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: rcoffler-collab/anda-estudio-criativo
   branch: main
-
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  use_graphql: true
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-
 locale: "pt"
-
 site_url: "https://angaestudiocriativo.netlify.app"
 display_url: "https://angaestudiocriativo.netlify.app"
 logo_url: "/assets/logo-escuro.png"
-
 slug:
   encoding: "ascii"
   clean_accents: true
   sanitize_replacement: "-"
-
 collections:
   - name: "portfolio"
     label: "Portfólio"
@@ -30,57 +29,24 @@ collections:
             widget: "list"
             summary: "{{fields.title}} — {{fields.category}}"
             fields:
-              - label: "Título"
-                name: "title"
-                widget: "string"
-
+              - {label: "Título", name: "title", widget: "string"}
               - label: "Categoria"
                 name: "category"
                 widget: "select"
                 options:
-                  - label: "Design editorial"
-                    value: "editorial"
-                  - label: "Identidade visual"
-                    value: "identidade"
-                  - label: "Materiais gráficos"
-                    value: "grafico"
-                  - label: "Digital / Websites"
-                    value: "digital"
-
-              - label: "Descrição curta"
-                name: "description"
-                widget: "string"
-                required: false
-
+                  - {label: "Design editorial", value: "editorial"}
+                  - {label: "Identidade visual", value: "identidade"}
+                  - {label: "Materiais gráficos", value: "grafico"}
+                  - {label: "Digital / Websites", value: "digital"}
+              - {label: "Descrição curta", name: "description", widget: "string", required: false}
               - label: "Tipo de apresentação"
                 name: "presentation"
                 widget: "select"
                 options:
-                  - label: "Mockup estático"
-                    value: "mockup"
-                  - label: "Revista / livro com PageFlip"
-                    value: "pageflip"
+                  - {label: "Mockup estático", value: "mockup"}
+                  - {label: "Revista / livro com PageFlip", value: "pageflip"}
                 default: "mockup"
-
-              - label: "Imagem / mockup ou capa"
-                name: "image"
-                widget: "image"
-
-              - label: "PDF para PageFlip (revistas e livros)"
-                name: "pdf"
-                widget: "file"
-                required: false
-                media_folder: "/assets/uploads/publicacoes"
-                public_folder: "/assets/uploads/publicacoes"
-                allow_multiple: false
-
-              - label: "Texto alternativo da imagem"
-                name: "alt"
-                widget: "string"
-                required: false
-
-              - label: "Destaque na página inicial"
-                name: "featured"
-                widget: "boolean"
-                default: false
-                required: false
+              - {label: "Imagem / mockup ou capa", name: "image", widget: "image"}
+              - {label: "PDF para PageFlip (revistas e livros)", name: "pdf", widget: "file", required: false, media_folder: "/assets/uploads/publicacoes", public_folder: "/assets/uploads/publicacoes", allow_multiple: false}
+              - {label: "Texto alternativo da imagem", name: "alt", widget: "string", required: false}
+              - {label: "Destaque na página inicial", name: "featured", widget: "boolean", default: false, required: false}

@@ -1,0 +1,7 @@
+ANGÁ ESTÚDIO CRIATIVO — ATUALIZAÇÃO COMPLETA
+
+Este pacote contém o site completo, incluindo páginas, imagens, conteúdo e painel administrativo.
+Mudanças: portfólio em quatro colunas em telas grandes, cards verticais e botão Folhear publicação destacado.
+Correção: ao fechar o PageFlip, o estado e as páginas são limpos; cada abertura começa na página 1. Carregamentos antigos são invalidados para evitar travamentos ao fechar/abrir rapidamente.
+
+ATENÇÃO: faça backup do repositório antes de substituir arquivos. Para atualizar o GitHub, envie o conteúdo da pasta do ZIP para a raiz do repositório, mantendo a estrutura de pastas. Não apague o repositório nem altere as configurações de Identity/Git Gateway.

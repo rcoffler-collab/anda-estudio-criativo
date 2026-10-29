@@ -1,13 +1,12 @@
 {
   "projects": [
     {
-      "title": "Teste de salvamento",
+      "title": "Exemplo de projeto editorial",
       "category": "editorial",
       "description": "Substitua este exemplo por um trabalho real da Angá.",
       "image": "/assets/designer-editorial.png",
       "alt": "Imagem ilustrativa de design editorial — substituir por projeto real",
-      "featured": true,
-      "presentation": "mockup"
+      "featured": true
     },
     {
       "title": "Exemplo de identidade visual",
@@ -15,8 +14,7 @@
       "description": "Substitua este exemplo por um trabalho real da Angá.",
       "image": "/assets/designer-workspace.png",
       "alt": "Imagem ilustrativa de identidade visual — substituir por projeto real",
-      "featured": false,
-      "presentation": "mockup"
+      "featured": false
     },
     {
       "title": "Exemplo de projeto digital",
@@ -24,17 +22,7 @@
       "description": "Substitua este exemplo por um trabalho real da Angá.",
       "image": "/assets/designer-computador.png",
       "alt": "Imagem ilustrativa de projeto digital — substituir por projeto real",
-      "featured": false,
-      "presentation": "mockup"
-    },
-    {
-      "presentation": "pageflip",
-      "featured": false,
-      "title": "Cartilha Violência Doméstica, O que fazer",
-      "category": "editorial",
-      "description": "Cartilha produzida para o Ministério Público do Estado do Espírito Santo",
-      "image": "/assets/uploads/cartilha_violencia_conta_mulher_fechar_pagina_1.jpg",
-      "pdf": "/assets/uploads/publicacoes/cartilha_violencia_conta_mulher_fechar.pdf"
+      "featured": false
     }
   ]
 }

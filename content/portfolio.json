@@ -1,15 +1,6 @@
 {
   "projects": [
     {
-      "title": "Exemplo de identidade visual",
-      "category": "identidade",
-      "description": "Substitua este exemplo por um trabalho real da Angá.",
-      "image": "/assets/designer-workspace.png",
-      "alt": "Imagem ilustrativa de identidade visual — substituir por projeto real",
-      "featured": false,
-      "presentation": "mockup"
-    },
-    {
       "title": "Exemplo de projeto digital",
       "category": "digital",
       "description": "Substitua este exemplo por um trabalho real da Angá.",

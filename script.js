@@ -163,8 +163,3 @@ document.querySelectorAll('[data-flip-close]').forEach(el => el.addEventListener
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeFlip(); });
 document.querySelector('[data-flip-prev]')?.addEventListener('click', () => activeFlip?.flipPrev());
 document.querySelector('[data-flip-next]')?.addEventListener('click', () => activeFlip?.flipNext());
-document.querySelector('[data-flip-fullscreen]')?.addEventListener('click', () => {
-  const panel = document.querySelector('.flip-modal-panel');
-  if (!document.fullscreenElement) panel?.requestFullscreen?.();
-  else document.exitFullscreen?.();
-});

@@ -35,6 +35,14 @@
       "description": "Cartilha produzida para o Ministério Público do Estado do Espírito Santo",
       "image": "/assets/uploads/cartilha_violencia_conta_mulher_fechar_pagina_1.jpg",
       "pdf": "/assets/uploads/publicacoes/cartilha_violencia_conta_mulher_fechar.pdf"
+    },
+    {
+      "presentation": "pageflip",
+      "featured": false,
+      "title": "Relatório de Gestão Asgav/Sipargs 2020",
+      "category": "editorial",
+      "image": "/assets/uploads/relatorio_de_gestao_asgav_2020_pagina_01.jpg",
+      "pdf": "/assets/uploads/publicacoes/relatorio_de_gestao_asgav_20202.pdf"
     }
   ]
 }

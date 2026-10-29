@@ -25,8 +25,21 @@ const form=document.querySelector('[data-contact-form]');if(form){form.addEventL
     }).join('');
     [...grid.querySelectorAll('.project')].forEach((card,index) => { card.querySelector('h2').textContent = projects[index].title || 'Projeto Angá'; card.querySelector('p').textContent = projects[index].description || labels[projects[index].category] || 'Projeto criativo'; });
     document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const filter=btn.dataset.filter;grid.querySelectorAll('[data-category]').forEach(card=>card.hidden=!(filter==='all'||card.dataset.category===filter));}));
-    grid.querySelectorAll('[data-open-flip]').forEach(el=>{const open=()=>openFlip(projects[Number(el.dataset.openFlip)]);el.addEventListener('click',open);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}})});
-  } catch (error) { grid.innerHTML = '<p>Não foi possível carregar os projetos agora. Tente atualizar a página.</p>'; }
+
+    // Delegação de eventos: continua funcionando mesmo após fechar e recriar o PageFlip.
+    grid.addEventListener('click', e => {
+      const el = e.target.closest('[data-open-flip]');
+      if (!el || !grid.contains(el)) return;
+      e.preventDefault();
+      openFlip(projects[Number(el.dataset.openFlip)]);
+    });
+    grid.addEventListener('keydown', e => {
+      const el = e.target.closest('[data-open-flip]');
+      if (!el || !grid.contains(el) || (e.key !== 'Enter' && e.key !== ' ')) return;
+      e.preventDefault();
+      openFlip(projects[Number(el.dataset.openFlip)]);
+    });
+  } catch (error) { grid.innerHTML = '<p>Não foi possível carregar os projetos agora. Tente atualizar a página.</p>'; console.error(error); }
 })();
 
 let activeFlip=null;
@@ -38,6 +51,7 @@ async function openFlip(project){
   const session=++flipSessionId;
   if(activeFlip){try{activeFlip.destroy()}catch(e){}activeFlip=null}
   const title=modal.querySelector('[data-flip-title]'), loading=modal.querySelector('[data-flip-loading]'), book=modal.querySelector('[data-flip-book]'), counter=modal.querySelector('[data-flip-counter]');
+  if(!title||!loading||!book||!counter)return;
   book.innerHTML='';counter.textContent='';
   const prev=modal.querySelector('[data-flip-prev]'), next=modal.querySelector('[data-flip-next]');
   if(prev)prev.disabled=true;if(next)next.disabled=true;
@@ -70,7 +84,11 @@ function closeFlip(){
   flipSessionId++;
   modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('flip-open');
   if(activeFlip){try{activeFlip.destroy()}catch(e){}activeFlip=null}
-  const book=modal.querySelector('[data-flip-book]');if(book)book.innerHTML='';
+  const book=modal.querySelector('[data-flip-book]');
+  if(book){
+    const freshBook=book.cloneNode(false);
+    book.replaceWith(freshBook);
+  }
   const counter=modal.querySelector('[data-flip-counter]');if(counter)counter.textContent='';
   const loading=modal.querySelector('[data-flip-loading]');if(loading){loading.hidden=false;loading.textContent='Preparando as páginas…'}
   const prev=modal.querySelector('[data-flip-prev]'),next=modal.querySelector('[data-flip-next]');if(prev)prev.disabled=true;if(next)next.disabled=true;

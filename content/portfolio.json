@@ -1,15 +1,6 @@
 {
   "projects": [
     {
-      "title": "Exemplo de projeto editorial",
-      "category": "editorial",
-      "description": "Substitua este exemplo por um trabalho real da Angá.",
-      "image": "/assets/designer-editorial.png",
-      "alt": "Imagem ilustrativa de design editorial — substituir por projeto real",
-      "featured": true,
-      "presentation": "mockup"
-    },
-    {
       "title": "Exemplo de identidade visual",
       "category": "identidade",
       "description": "Substitua este exemplo por um trabalho real da Angá.",

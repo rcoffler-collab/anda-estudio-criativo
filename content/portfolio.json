@@ -26,6 +26,15 @@
       "alt": "Imagem ilustrativa de projeto digital — substituir por projeto real",
       "featured": false,
       "presentation": "mockup"
+    },
+    {
+      "presentation": "pageflip",
+      "featured": false,
+      "title": "Cartilha Violência Doméstica, O que fazer",
+      "category": "editorial",
+      "description": "Cartilha produzida para o Ministério Público do Estado do Espírito Santo",
+      "image": "/assets/uploads/cartilha_violencia_conta_mulher_fechar_pagina_1.jpg",
+      "pdf": "/assets/uploads/publicacoes/cartilha_violencia_conta_mulher_fechar.pdf"
     }
   ]
 }
